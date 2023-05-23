@@ -9,7 +9,6 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        java_versions: [11, 15, 17]
     runs-on: ${{ matrix.os }}
     steps:
       - name: log java version
@@ -17,7 +16,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v3
         with:
-          java-version: ${{ matrix.java_versions }}
+          java-version: 17
       - name: List Files After Checkout
         run: |
           pwd
