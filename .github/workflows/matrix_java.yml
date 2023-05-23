@@ -5,7 +5,7 @@ on:
       - main
 
 jobs: 
-  node-version:
+  java-version:
     runs-on: ubuntu-latest
     steps:
       - name: log java version
@@ -19,5 +19,6 @@ jobs:
         run: |
           pwd
           ls -a
+          tree
       - name: log java version
         run: java -version
