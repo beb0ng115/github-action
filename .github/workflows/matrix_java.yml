@@ -1,0 +1,17 @@
+name: Matrix 
+on:
+  push:
+    branches:
+      - main
+
+jobs: 
+  node-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: log java version
+        run: java -v
+      - uses: actions/setup-java@v1
+        with: 
+          node-version: 6
+      - name: log nodes version
+        run: java -v
