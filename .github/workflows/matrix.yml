@@ -1,0 +1,14 @@
+name: Matrix 
+on: pull_request 
+
+jobs: 
+  node-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: log nodes version
+        run: node -v
+      - uses: actions/setup-node@v1
+        with: 
+          node-version: 6
+      - name: log nodes version
+        run: node -v
