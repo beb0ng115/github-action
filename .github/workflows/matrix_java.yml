@@ -22,6 +22,5 @@ jobs:
         run: |
           pwd
           ls -a
-          tree
       - name: log java version
         run: java -version
