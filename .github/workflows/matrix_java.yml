@@ -15,5 +15,9 @@ jobs:
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
+      - name: List Files After Checkout
+        run: |
+          pwd
+          ls -a
       - name: log java version
         run: java -version
