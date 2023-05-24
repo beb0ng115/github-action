@@ -1221,6 +1221,8 @@ module.exports = require("punycode");
 
 const core = __webpack_require__(470)
 const github = __webpack_require__(469)
+var fs = __webpack_require__(747);
+
 
 try{
     const name = core.getInput('who-to-greet');
@@ -1228,6 +1230,15 @@ try{
 
     const time = new Date();
     core.setOutput("time", time.toTimeString());
+
+    var files = fs.readdirSync('/assets/photos/');
+    
+
+    console.log(JSON.stringify(files, null, '\t'));
+
+
+    core.setOutput("files : ", files.toString());
+
 
     console.log(JSON.stringify(github, null, '\t'));
 

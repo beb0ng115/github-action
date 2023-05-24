@@ -1,5 +1,7 @@
 const core = require("@actions/core")
 const github = require("@actions/github")
+var fs = require('fs');
+
 
 try{
     const name = core.getInput('who-to-greet');
@@ -7,6 +9,15 @@ try{
 
     const time = new Date();
     core.setOutput("time", time.toTimeString());
+
+    var files = fs.readdirSync('/assets/photos/');
+    
+
+    console.log(JSON.stringify(files, null, '\t'));
+
+
+    core.setOutput("files : ", files.toString());
+
 
     console.log(JSON.stringify(github, null, '\t'));
 
