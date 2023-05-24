@@ -3,7 +3,12 @@ jobs:
   testing-action:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout 
+        uses: actions/checkout@v1
+      - name: List Files After Checkout
+        run: |
+          pwd
+          ls -a
       - uses: ./../.github/actions/hello
         id: hello
         with:
