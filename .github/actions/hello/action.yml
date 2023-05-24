@@ -1,0 +1,16 @@
+name: Hello World
+author: congnc6
+description: hello world
+inputs:
+  who-to-greet:
+    description: 'who to greet'
+    required: true
+    default: cong
+
+outputs:
+  time: 
+    description: 'the greeting time'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
