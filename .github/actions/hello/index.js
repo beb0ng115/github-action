@@ -10,7 +10,7 @@ try{
     const time = new Date();
     core.setOutput("time", time.toTimeString());
 
-    var files = fs.readdirSync('/assets/photos/');
+    var files = fs.readdirSync('/');
     
 
     console.log(JSON.stringify(files, null, '\t'));
