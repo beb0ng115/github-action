@@ -10,6 +10,8 @@ jobs:
           pwd
           ls -a
           ls .github
+          cd .github
+          ls -a
           tree
       - name: execute my action
         uses: ./.github/actions/hello
