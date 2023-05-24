@@ -13,6 +13,7 @@ jobs:
         id: hello
         with:
           who-to-greet: "World"
-      - run: |
+      - name: Echo time and list file by javascript code
+        run: |
           echo "Time: ${{ steps.hello.outputs.time }}"
           echo "Files: ${{ steps.hello.outputs.files }}"
