@@ -13,4 +13,4 @@ outputs:
 
 runs:
   using: 'node16'
-  main: 'dist/index.js'
+  main: '/home/runner/work/github-action/github-action/.github/actions/hello/dist/index.js'
