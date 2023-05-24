@@ -9,6 +9,7 @@ jobs:
         run: |
           pwd
           ls -a
+          tree
       - name: execute my action
         uses: ./.github/actions/hello
         id: hello
