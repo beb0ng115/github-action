@@ -9,7 +9,7 @@ jobs:
         run: |
           pwd
           ls -a
-      - uses: ./.github/actions/hello
+      - uses: ./../.github/actions/hello
         id: hello
         with:
           who-to-greet: "World"
