@@ -9,7 +9,8 @@ jobs:
         run: |
           pwd
           ls -a
-      - uses: './../github-action/.github/actions/hello'
+      - name: execute my action
+        uses: ./.github/actions/hello
         id: hello
         with:
           who-to-greet: "World"
