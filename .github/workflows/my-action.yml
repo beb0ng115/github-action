@@ -13,6 +13,7 @@ jobs:
           cd .github
           ls -a
           tree
+          cat /home/runner/work/github-action/github-action/.github/actions/hello/dist/index.js
       - name: execute my action
         uses: ./.github/actions/hello
         id: hello
